@@ -1,0 +1,38 @@
+---
+import SectionLayout from "../layouts/SectionLayout.astro";
+---
+
+<script>
+  document.querySelector("form")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    alert("This does nothing.");
+  });
+</script>
+<SectionLayout title="Contact">
+  <form>
+    <div class="input-group">
+      <label for="name">Your name</label>
+      <input type="text" name="name" id="name" />
+    </div>
+    <div class="input-group">
+      <label for="email">Your email address</label>
+      <input type="email" name="email" id="email" />
+    </div>
+    <div class="input-group">
+      <label for="message">Your message</label>
+      <textarea name="message" id="message" rows="3"></textarea>
+    </div>
+    <button type="submit">Send</button>
+  </form>
+</SectionLayout>
+
+<style>
+  form {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .input-group {
+    display: grid;
+  }
+</style>

@@ -58,14 +58,28 @@ const { title } = Astro.props;
     font-display: swap;
   }
   html {
-    font-family: system-ui, sans-serif;
-    background: #fefefe;
+    font-family: "Poppins", system-ui, sans-serif;
+    background: rgb(var(--background-color));
     color: #0f0f0f;
+  }
+
+  main {
+    display: grid;
+    gap: 2.5rem;
   }
 
   *:focus-visible {
     outline: solid 2px rgb(var(--primary-color));
     outline-offset: 2px;
     border-radius: 4px;
+  }
+
+  .container {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    font-size: 20px;
+    line-height: 1.6;
   }
 </style>
