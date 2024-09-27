@@ -82,4 +82,24 @@ const { title } = Astro.props;
     font-size: 20px;
     line-height: 1.6;
   }
+  .button {
+    padding: 0.5em 1em;
+    background-color: rgb(var(--primary-color));
+    display: inline-block;
+    color: white;
+    width: fit-content;
+    margin-block: 1rem;
+    cursor: pointer;
+  }
+  .button:hover,
+  .button:focus-visible {
+    background: hsl(from rgb(var(--primary-color)) h s 20%);
+    scale:;
+  }
+
+  @media screen and (max-width: 794px) {
+    .button {
+      width: 100%;
+    }
+  }
 </style>

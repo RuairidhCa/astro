@@ -9,7 +9,7 @@ import headshot from "../images/Headshot_Cropped.jpeg";
       <h1 class="text-gradient">Ruairidh Cavaye</h1>
       <h2>(Just a) Front-end Developer</h2>
       <p style={{ fontWeight: 300 }}>Some text here</p>
-      <a class="button-link">Contact</a>
+      <a class="button">Contact</a>
     </div>
 
     <Image class="headshot" src={headshot} alt="Me." loading="eager" />
@@ -17,14 +17,6 @@ import headshot from "../images/Headshot_Cropped.jpeg";
 </section>
 
 <style>
-  .container {
-    margin: auto;
-    padding: 1rem;
-    width: 800px;
-    max-width: calc(100% - 2rem);
-    font-size: 20px;
-    line-height: 1.6;
-  }
   h1 {
     font-size: 3rem;
     font-family: "Poppins";
@@ -71,23 +63,6 @@ import headshot from "../images/Headshot_Cropped.jpeg";
     background-position: 0%;
   }
 
-  .button-link {
-    padding: 0.5em 1em;
-    background-color: rgb(var(--primary-color));
-    display: inline-block;
-    color: white;
-    width: fit-content;
-    margin-block: 1rem;
-    cursor: pointer;
-  }
-  .button-link:hover,
-  .button-link:focus-visible {
-    /* text-decoration: underline;
-    text-underline-offset: 4px; */
-    background: hsl(from rgb(var(--primary-color)) h s 20%);
-    scale: 1.02;
-  }
-
   .about {
     display: grid;
     gap: 1rem;
@@ -99,9 +74,6 @@ import headshot from "../images/Headshot_Cropped.jpeg";
       text-align: center;
     }
 
-    .button-link {
-      width: 100%;
-    }
     .about {
       justify-content: center;
     }
