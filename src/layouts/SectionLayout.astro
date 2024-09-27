@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+
+const idFromTitle = title
+  .toLowerCase()
+  .replaceAll(/[^\s\w]/g, "")
+  .replace(/\s/g, "-");
+---
+
+<section class="container" id={idFromTitle}>
+  <h2>{title}</h2>
+  <slot />
+</section>
+
+<style>
+  h2 {
+    padding-block-end: 0.75rem;
+  }
+</style>
