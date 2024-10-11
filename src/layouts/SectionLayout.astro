@@ -17,6 +17,23 @@ const idFromTitle = title
 
 <style>
   h2 {
-    padding-block-end: 0.75rem;
+    --padding-bottom: 0.75rem;
+
+    font-size: 2rem;
+    padding-block-end: var(--padding-bottom);
+    color: rgb(var(--primary-color));
+    position: relative;
+    width: fit-content;
+  }
+
+  h2::after {
+    content: "";
+    background-color: #c9e9ff;
+    height: 16px;
+    width: calc(100% + 10px);
+    position: absolute;
+    inset: auto 0 calc(var(--padding-bottom) + 8px) -5px;
+    z-index: -1;
+    display: inline-block;
   }
 </style>
