@@ -27,11 +27,7 @@ const { title } = Astro.props;
     --accent-light: 232, 241, 245;
     --primary-color: 0, 74, 124;
     --accent-dark: 0, 86, 145;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--primary-color)),
-      rgb(var(--accent-dark)) 30%
-    );
+
   }
 
   @font-face {
@@ -78,25 +74,27 @@ const { title } = Astro.props;
     margin: auto;
     padding: 1rem;
     width: 800px;
-    max-width: calc(100% - 2rem);
-    font-size: 20px;
+    max-width: calc(100vw - 2rem);
     line-height: 1.6;
   }
   .button {
     padding: 0.5em 1em;
-    background-color: rgb(var(--primary-color));
-    display: inline-block;
     color: white;
     width: fit-content;
     margin-block: 1rem;
     cursor: pointer;
+    border: solid white 1px;
+    background: none;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    text-decoration: none;
   }
   .button:hover,
   .button:focus-visible {
     background: hsl(from rgb(var(--primary-color)) h s 20%);
-    scale:;
+    scale:1.05;
   }
-
   @media screen and (max-width: 794px) {
     .button {
       width: 100%;
