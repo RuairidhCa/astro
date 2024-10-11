@@ -13,7 +13,7 @@ import ArrowForwardIcon from "../images/icons/arrow_forward.svg";
       <a href="https://www.linkedin.com/in/ruairidhcavaye/">
         <Image width="32" src={LinkedInLogo} alt="Go to my LinkedIn Profile" />
       </a>
-      <a href="#about" class="button"
+      <a href="#about" class="button button--outline"
         >More about me <Image height="18" src={ArrowForwardIcon} alt="" /></a
       >
     </div>
@@ -66,21 +66,5 @@ import ArrowForwardIcon from "../images/icons/arrow_forward.svg";
     h2 {
       font-size: 1.25rem;
     }
-  }
-
-  button {
-    border: solid white 1px;
-    background: none;
-    color: inherit;
-    width: fit-content;
-    padding: 0.75em 1em;
-    display: flex;
-    gap: 0.25rem;
-    align-items: center;
-  }
-
-  button:hover,
-  button:focus-visible {
-    background: hsl(from rgb(var(--primary-color)) h s 20%);
   }
 </style>
